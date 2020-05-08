@@ -1,0 +1,16 @@
+1. A single class should have only one responsibility.
+2. It makes code a lot more easy to read, re-factor and manageable.
+3. In other words we can say a class should have only one reason to change.
+4. Too much responsibility leads to coupling.
+   Coupling --
+       If a client code wants to know Class B to access Class A then A and B are said to be coupled.
+	
+	How can we achieve it:
+		1. Gather together the things that change for the same reason.
+		2. Always look for too big methods.
+		3. Keep track of dependencies. Try avoid using too much parameters. 
+		4. If possible, always inject dependency via DI.
+		5. re-factor early and as often as you see that something can be simplified.
+		6. Introduce change where it matters the most, not where it will make code more coupled and less cohesive.Keep things simple but not simpler.
+		
+		
